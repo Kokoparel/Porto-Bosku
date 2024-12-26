@@ -97,27 +97,50 @@
     transform: scale(1.2); /* Efek zoom saat hover */
   }
 
- 
-
-/* Untuk layar kecil (smartphone) */
-@media screen and (max-width: 768px) {
-  header h1 {
-    font-size: 2.5em;
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  
+    header {
+      padding: 15px 0;
+    }
+  
+    header h1 {
+      font-size: 2em;
+    }
+  
+    main {
+      padding: 10px;
+    }
+  
+    .project {
+      margin: 15px 0;
+      padding: 15px;
+    }
+  
+    .project h2 {
+      font-size: 1.5em;
+    }
+  
+    .project p {
+      font-size: 1em;
+    }
+  
+    .project-image {
+      width: 100%;
+      height: auto;
+      max-width: 100%; /* Memastikan gambar tidak lebih besar dari layar */
+    }
+  
+    .social-icons {
+      flex-direction: column; /* Tumpuk ikon secara vertikal */
+      gap: 15px; /* Kurangi jarak antar ikon */
+    }
+  
+    .social-icons a {
+      font-size: 2em; /* Sesuaikan ukuran ikon untuk layar kecil */
+    }
   }
-  .project h1 {
-      font-size: 100px;
-  }          
-  .project h2 {
-    font-size: 30px;
-  }
-  .project p {
-    font-size: 18px;
-  }
-  .social-icons a {
-    font-size: 2em;
-  }
-  .social-icons {
-    flex-direction: column; /* Menumpuk ikon di ponsel */
-    gap: 15px; /* Jarak antar ikon diperkecil */
-  }
-}
+  
