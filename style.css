@@ -49,9 +49,10 @@
   .project p {
     color: #666;
     font-size:30px;
+    text-align:justify;
   }
   
-  /* Styling for project images */
+   
   .project-image {
     width: 100%;
     max-width: 1300px;
@@ -62,7 +63,7 @@
   }
   
   .project-image:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    transform: scale(1.05);  
   }
   
   /* Fade-in effect */
@@ -81,20 +82,28 @@
 
   .social-icons {
     display: flex;
-    justify-content: center; /* Menyusun ikon di tengah horizontal */
-    gap: 30px; /* Memberi jarak antar ikon */
+    justify-content: center;  
+    gap: 30px; 
   }
   
   .social-icons a {
-    font-size: 3em; /* Ukuran ikon */
+    font-size: 3em;  
     color: #555;
     text-decoration: none;
     transition: color 0.3s, transform 0.3s;
   }
   
   .social-icons a:hover {
-    color: #4CAF50; /* Ganti warna saat hover */
-    transform: scale(1.2); /* Efek zoom saat hover */
+    color: #4CAF50;  
+    transform: scale(1.2); 
+  }
+
+  .about-img {
+    max-width: 100%;    
+    height: auto;       
+    display: block;     
+    margin: 0 auto;       
+    border-radius: 50%; 
   }
 
   @media screen and (max-width: 768px) {
@@ -131,16 +140,23 @@
     .project-image {
       width: 100%;
       height: auto;
-      max-width: 100%; /* Memastikan gambar tidak lebih besar dari layar */
+      max-width: 100%; 
     }
   
     .social-icons {
-      flex-direction: column; /* Tumpuk ikon secara vertikal */
-      gap: 15px; /* Kurangi jarak antar ikon */
+      flex-direction: row; 
+      gap: 15px;
     }
   
     .social-icons a {
-      font-size: 2em; /* Sesuaikan ukuran ikon untuk layar kecil */
+      font-size: 2em; 
+    }
+
+    .about-img {
+      max-width: 100%;   
+      height: auto;     
+      display: block;    
+      margin: 0 auto;     
     }
   }
   
